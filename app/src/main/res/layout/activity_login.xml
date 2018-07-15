@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.ali.work.Activities.Login">
+        <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <EditText
+            android:id="@+id/username_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+                android:typeface="sans"
+            android:hint="نام کاربری یا ایمیل"
+            android:textColorHint="@color/black"
+            android:layout_marginLeft="40dp"
+                 />
+            <EditText
+                android:id="@+id/password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:hint="رمز عبور"
+                android:inputType="textPassword"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/username_edittext"
+                android:textColorHint="@color/black"
+                android:typeface="sans"
+                android:layout_marginLeft="40dp"
+                />
+            <Button
+                android:id="@+id/enter_button"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_height="50dp"
+                android:text="ورود"
+                android:textSize="20dp"
+                android:typeface="sans"
+                android:background="@color/yellow"
+                android:layout_below="@id/password_edittext"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"/>
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_height="50dp"
+                android:typeface="sans"
+                android:text="عضو نیستید ؟ ثبت نام"
+                android:textSize="20dp"
+                android:background="@color/green"
+                android:layout_below="@id/enter_button"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رمز عبور را فراموش کردید ؟"
+                android:typeface="sans"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:textSize="15dp"
+                android:layout_marginBottom="50dp"/>
+
+
+        </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        tools:ignore="ContentDescription"
+        android:id="@+id/programming_logo"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:src="@drawable/programming_logo"
+        android:layout_width="160dp"
+        android:layout_height="130dp" />
+    <TextView
+        android:id="@+id/programming_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/programming_logo"
+        android:textSize="20sp"
+        android:typeface="sans"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="برنامه نویسی کار میکنی ؟"/>
+    <TextView
+        android:id="@+id/description_programming"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/programming_title"
+        android:layout_height="wrap_content"
+        android:typeface="sans"
+        android:textSize="17sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/programming_logo"
+        android:text="برای ورود به بخش برنامه نویسی کلیک کنید !"
+        android:layout_alignParentRight="true"
+/>
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/advertising_gif"
+        android:src="@drawable/advertising"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/programming_logo"/>
+</RelativeLayout>
+
